@@ -212,7 +212,7 @@ class ModuleSet:
         return test_modules
 
     def get_module_state(self, modules):
-        installed_pkgconfig = systeminstall.get_installed_pkgconfigs(self.config)
+        installed_pkgconfig = systeminstall.get_installed_pkgconfigs(self.config, modules=modules)
         
         module_state = {}
         for module in modules:
@@ -251,7 +251,7 @@ class ModuleSet:
 
         return_list = []
 
-        installed_pkgconfig = systeminstall.get_installed_pkgconfigs(self.config)
+        installed_pkgconfig = systeminstall.get_installed_pkgconfigs(self.config, modules=modules)
 
         for module in modules:
             if isinstance(module, SystemModule):
@@ -605,4 +605,3 @@ def warn_local_modulesets(config):
             _('Modulesets were edited locally but JHBuild is configured '\
               'to get them from the network, perhaps you need to add '\
               'use_local_modulesets = True to your %s.' % config.filename))
-

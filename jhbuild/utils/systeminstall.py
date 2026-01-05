@@ -30,7 +30,7 @@ import re
 from . import cmds
 from . import _, udecode
 
-def get_installed_pkgconfigs(config):
+def get_installed_pkgconfigs(config, *, modules=None):
     """Returns a dictionary mapping pkg-config names to their current versions on the system."""
     pkgversions = {}
     cmd = ['pkg-config', '--list-all']
@@ -40,10 +40,16 @@ def get_installed_pkgconfigs(config):
         logging.error("{} failed".format(cmd))
         return pkgversions
 
+    if modules is not None:
+        usedPkgs = set(module.pkg_config[:-3] for module in modules if module.pkg_config is not None)
+    else:
+        usedPkgs = None
+
     pkgs = []
     for line in stdout.splitlines():
         pkg, rest = line.split(None, 1)
-        pkgs.append(pkg)
+        if usedPkgs is None or pkg in usedPkgs:
+            pkgs.append(pkg)
 
     # see if we can get the versions "the easy way"
     try:

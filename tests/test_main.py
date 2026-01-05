@@ -780,7 +780,7 @@ class UtilsTest(JhbuildConfigTestCase):
         self.assertTrue(jhbuild.utils.cmds.compare_version('2', '1.2.3.4'))
         self.assertFalse(jhbuild.utils.cmds.compare_version('1.2.3.4', '2'))
 
-def get_installed_pkgconfigs(config):
+def get_installed_pkgconfigs(config, *, modules=None):
     ''' overload jhbuild.utils.get_installed_pkgconfigs'''
     return {'syspkgalpha'   : '2',
             'syspkgbravo'   : '3.4'}
