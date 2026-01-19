@@ -1,21 +1,21 @@
 # Georgian translation for jhbuild.
 # Copyright (C) 2023 jhbuild's authors
 # This file is distributed under the same license as the jhbuild package.
-# Ekaterine Papava <papava.e@gtu.ge>, 2023=2025.
+# Ekaterine Papava <papava.e@gtu.ge>, 2023-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: jhbuild master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/jhbuild/issues/\n"
-"POT-Creation-Date: 2024-10-16 16:07+0000\n"
-"PO-Revision-Date: 2025-06-09 11:27+0200\n"
+"POT-Creation-Date: 2025-11-27 19:17+0000\n"
+"PO-Revision-Date: 2026-01-19 11:50+0100\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian <ka@li.org>\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: autogen.sh:109
 #, sh-format
@@ -209,12 +209,12 @@ msgstr ""
 #: jhbuild/commands/base.py:211 jhbuild/commands/base.py:308
 #: jhbuild/commands/tinderbox.py:68
 msgid "don't poison modules on failure"
-msgstr ""
+msgstr "ჩავარდნისას მოდულები არ მოიწამლება"
 
 #: jhbuild/commands/base.py:214 jhbuild/commands/base.py:311
 #: jhbuild/commands/tinderbox.py:71
 msgid "build even if policy says not to"
-msgstr ""
+msgstr "აგება მაშინაც, თუ ამას პოლიტიკა კრძალავს"
 
 #: jhbuild/commands/base.py:217
 msgid "also build soft-dependencies that could be skipped"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: jhbuild/commands/base.py:223 jhbuild/commands/tinderbox.py:74
 msgid "ignore missing system dependencies"
-msgstr ""
+msgstr "ნაკლული სისტემური დამოკიდებულებების გამოტოვება"
 
 #: jhbuild/commands/base.py:247
 msgid "requested module is in the ignore list, nothing to do."
@@ -257,7 +257,7 @@ msgstr ""
 
 #: jhbuild/commands/base.py:357
 msgid "[ options ... ] program [ arguments ... ]"
-msgstr ""
+msgstr "[ პარამეტრები ... ] პროგრამა [ არგუმენტები ... ]"
 
 #: jhbuild/commands/base.py:363
 msgid "run command in build dir of the given module"
@@ -270,7 +270,7 @@ msgstr ""
 #: jhbuild/commands/base.py:379 jhbuild/commands/base.py:409
 #, python-format
 msgid "Unable to execute the command '%(command)s': %(err)s"
-msgstr ""
+msgstr "შესრულების შეცდომა ბრძანებისთვის '%(command)s': %(err)s"
 
 #: jhbuild/commands/base.py:400
 #, python-format
@@ -288,15 +288,15 @@ msgstr ""
 
 #: jhbuild/commands/base.py:431
 msgid "List the modules that would be built"
-msgstr ""
+msgstr "მოდულების სია, რომელიც აიგება"
 
 #: jhbuild/commands/base.py:440
 msgid "show which revision will be built"
-msgstr ""
+msgstr "ჩვენება, რომელი რევიზია აიგება"
 
 #: jhbuild/commands/base.py:446
 msgid "start list at the given module"
-msgstr ""
+msgstr "სიის დაწყება მითითებულ მოდულთან"
 
 #: jhbuild/commands/base.py:455
 msgid "also list soft-dependencies that could be skipped"
@@ -581,7 +581,7 @@ msgstr ""
 
 #: jhbuild/commands/sanitycheck.py:43
 msgid "no extra arguments expected"
-msgstr ""
+msgstr "დამატებით არგუმენტებს არ მოველოდი"
 
 #: jhbuild/commands/sanitycheck.py:55
 #, python-format
@@ -591,7 +591,7 @@ msgstr ""
 #: jhbuild/commands/sanitycheck.py:58
 #, python-format
 msgid "install prefix (%s) is not writable"
-msgstr ""
+msgstr "დაყენების პრეფიქსი (%s) ჩაწერადი არაა"
 
 #: jhbuild/commands/sanitycheck.py:65 jhbuild/commands/sanitycheck.py:68
 #: jhbuild/commands/sanitycheck.py:71 jhbuild/commands/sanitycheck.py:75
@@ -602,7 +602,7 @@ msgstr ""
 #: jhbuild/modtypes/cmake.py:96 jhbuild/modtypes/meson.py:94
 #: jhbuild/versioncontrol/bzr.py:219 jhbuild/versioncontrol/cvs.py:302
 #: jhbuild/versioncontrol/darcs.py:106 jhbuild/versioncontrol/fossil.py:103
-#: jhbuild/versioncontrol/git.py:531 jhbuild/versioncontrol/hg.py:106
+#: jhbuild/versioncontrol/git.py:525 jhbuild/versioncontrol/hg.py:106
 #: jhbuild/versioncontrol/mtn.py:142 jhbuild/versioncontrol/svn.py:320
 #, python-format
 msgid "%s not found"
@@ -628,20 +628,20 @@ msgstr ""
 
 #: jhbuild/commands/sanitycheck.py:111
 msgid "curl or wget not found"
-msgstr ""
+msgstr "curl ან wget აღმოჩენილი არაა"
 
 #: jhbuild/commands/sanitycheck.py:120
 msgid "Installed git program is not the right git"
-msgstr ""
+msgstr "დაყენებული git სწორი არაა"
 
 #: jhbuild/commands/sanitycheck.py:126
 msgid "Could not check git program"
-msgstr ""
+msgstr "git-ის შემოწმება შეუძლებელია"
 
 #: jhbuild/commands/sanitycheck.py:156
 #, python-format
 msgid "aclocal can't see %s macros"
-msgstr ""
+msgstr "aclocal ვერ ხედავს %s-ის მაკროებს"
 
 #: jhbuild/commands/sanitycheck.py:161
 #, python-format
@@ -660,15 +660,15 @@ msgstr ""
 
 #: jhbuild/commands/sysdeps.py:43
 msgid "Machine readable list of missing sysdeps"
-msgstr ""
+msgstr "ნაკლული სისტემური დამოკიდებულებების მანქანისთვის წაკითხვადი სია"
 
 #: jhbuild/commands/sysdeps.py:46
 msgid "Machine readable list of all sysdeps"
-msgstr ""
+msgstr "სისტემური დამოკიდებულებების მანქანისთვის წაკითხვადი სია"
 
 #: jhbuild/commands/sysdeps.py:49
 msgid "Install pkg-config modules via system"
-msgstr ""
+msgstr "pkg-config-ის მოდულების დაყენება სისტემიდან"
 
 #: jhbuild/commands/sysdeps.py:53
 msgid ""
@@ -707,7 +707,7 @@ msgstr ""
 #: jhbuild/commands/sysdeps.py:217
 #, python-format
 msgid "Installing dependencies on system: %s"
-msgstr ""
+msgstr "დამოკიდებულებების დაყენება სისტემაში: %s"
 
 #: jhbuild/commands/tinderbox.py:29
 msgid "Build modules non-interactively and store build logs"
@@ -715,7 +715,7 @@ msgstr ""
 
 #: jhbuild/commands/tinderbox.py:53
 msgid "directory to store build logs in"
-msgstr ""
+msgstr "საქაღალდე აგების ჟურნალის ფაილების შესანახად"
 
 #: jhbuild/commands/tinderbox.py:85
 msgid "output directory for tinderbox build not specified"
@@ -733,7 +733,7 @@ msgstr ""
 #: jhbuild/commands/uninstall.py:64
 #, python-format
 msgid "Module %(mod)r is not installed"
-msgstr ""
+msgstr "მოდული %(mod)r დაყენებული არაა"
 
 #: jhbuild/config.py:90
 #, python-format
@@ -742,17 +742,17 @@ msgstr ""
 
 #: jhbuild/config.py:113
 msgid "could not load config defaults"
-msgstr ""
+msgstr "კონფიგურაციის ნაგულისხმევი მნიშვნელობების ჩატვირთვის შეცდომა"
 
 #: jhbuild/config.py:124
 #, python-format
 msgid "could not load system config %s"
-msgstr ""
+msgstr "ვერ ჩავტვირთე კონფიგურაციის ფაილი %s"
 
 #: jhbuild/config.py:133
 #, python-format
 msgid "could not load config file, %s is missing"
-msgstr ""
+msgstr "ვერ ჩავტვირთე კონფიგურაციის ფაილი. %s აღმოჩენილი არაა"
 
 #: jhbuild/config.py:139
 #, python-format
@@ -764,11 +764,11 @@ msgstr ""
 #: jhbuild/config.py:198
 #, python-format
 msgid "Could not include config file (%s)"
-msgstr ""
+msgstr "კონფიგურაციის ფაილის ჩასმის შეცდომა (%s)"
 
 #: jhbuild/config.py:212
 msgid "could not load config file"
-msgstr ""
+msgstr "კონფიგურაციის ფაილის ჩატვირთვა შეუძლებელია"
 
 #: jhbuild/config.py:226
 #, python-format
@@ -839,22 +839,22 @@ msgid ""
 "quiet mode has been disabled because the Python curses module is missing."
 msgstr ""
 
-#: jhbuild.desktop.in.in:4
+#: jhbuild.desktop.in.in:3
 msgid "GNOME Build Tool"
 msgstr ""
 
-#: jhbuild.desktop.in.in:5
+#: jhbuild.desktop.in.in:4
 msgid "Build GNOME modules"
 msgstr ""
 
 #: jhbuild/frontends/autobuild.py:75
 #, python-format
 msgid "Server Error, retrying in %d seconds"
-msgstr ""
+msgstr "სერვერის შეცდომა. თავიდან ცდა %d წამში"
 
 #: jhbuild/frontends/autobuild.py:79
 msgid "Server Error, aborting"
-msgstr ""
+msgstr "სერვერის შეცდომა. შეწყვეტა"
 
 #: jhbuild/frontends/autobuild.py:185
 #, python-format
@@ -864,7 +864,7 @@ msgstr "შეცდომა: %s"
 #: jhbuild/frontends/autobuild.py:190 jhbuild/utils/cmds.py:67
 #, python-format
 msgid "Error running %s"
-msgstr ""
+msgstr "%s-ის გაშვების შეცდომა"
 
 #: jhbuild/frontends/autobuild.py:217
 msgid "ERROR: Wrong credentials, please check username/password"
@@ -873,74 +873,74 @@ msgstr ""
 #: jhbuild/frontends/autobuild.py:223
 #, python-format
 msgid "Starting Build #%s"
-msgstr ""
+msgstr "#%s-ის აგების დაწყება"
 
 #: jhbuild/frontends/autobuild.py:237
 #, python-format
 msgid "**** Starting module %s ****"
-msgstr ""
+msgstr "**** ეშვება მოდული %s ****"
 
-#: jhbuild/frontends/buildscript.py:43
+#: jhbuild/frontends/buildscript.py:42
 #, python-format
 msgid "install prefix (%s) must be writable"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:50
+#: jhbuild/frontends/buildscript.py:49
 #, python-format
 msgid "checkout root (%s) can not be created"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:52
+#: jhbuild/frontends/buildscript.py:51
 #, python-format
 msgid "checkout root (%s) must be writable"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:59
+#: jhbuild/frontends/buildscript.py:58
 #, python-format
 msgid "checkout copy dir (%s) can not be created"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:61
+#: jhbuild/frontends/buildscript.py:60
 #, python-format
 msgid "checkout copy dir (%s) must be writable"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:68
+#: jhbuild/frontends/buildscript.py:67
 #, python-format
 msgid "checkout export dir (%s) can not be created"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:70
+#: jhbuild/frontends/buildscript.py:69
 #, python-format
 msgid "checkout export dir (%s) must be writable"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:119
+#: jhbuild/frontends/buildscript.py:118
 #, python-format
 msgid "Skipping %s (installed recently)"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:128
+#: jhbuild/frontends/buildscript.py:127
 #, python-format
 msgid "module %(mod)s will be built even though %(dep)s failed"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:131
+#: jhbuild/frontends/buildscript.py:130
 #, python-format
 msgid "module %(mod)s not built due to non buildable %(dep)s"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:250
+#: jhbuild/frontends/buildscript.py:249
 #, python-format
 msgid "Ignoring uninstalled package: %s"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:269
+#: jhbuild/frontends/buildscript.py:268
 #, python-format
 msgid "Running post-installation trigger script: %r"
 msgstr ""
 
-#: jhbuild/frontends/buildscript.py:277 jhbuild/frontends/gtkui.py:604
+#: jhbuild/frontends/buildscript.py:276 jhbuild/frontends/gtkui.py:604
 #, python-format
 msgid "%(command)s returned with an error code (%(rc)s)"
 msgstr ""
@@ -970,7 +970,8 @@ msgstr "გაშვება"
 msgid "Build Completed"
 msgstr "აგება დასრულდა"
 
-#: jhbuild/frontends/gtkui.py:376 jhbuild/frontends/terminal.py:313
+#: jhbuild/frontends/gtkui.py:376 jhbuild/frontends/terminal.py:312
+#: jhbuild/frontends/terminal.py:320
 #, python-format
 msgid "Error during phase %(phase)s of %(module)s"
 msgstr ""
@@ -979,28 +980,28 @@ msgstr ""
 msgid "Pick an Action"
 msgstr "აირჩიეთ ქმედება"
 
-#: jhbuild/frontends/gtkui.py:396 jhbuild/frontends/terminal.py:340
+#: jhbuild/frontends/gtkui.py:396 jhbuild/frontends/terminal.py:347
 #, python-format
 msgid "Rerun phase %s"
 msgstr ""
 
-#: jhbuild/frontends/gtkui.py:399 jhbuild/frontends/terminal.py:342
+#: jhbuild/frontends/gtkui.py:399 jhbuild/frontends/terminal.py:349
 #, python-format
 msgid "Ignore error and continue to %s"
 msgstr ""
 
-#: jhbuild/frontends/gtkui.py:402 jhbuild/frontends/terminal.py:344
+#: jhbuild/frontends/gtkui.py:402 jhbuild/frontends/terminal.py:351
 msgid "Ignore error and continue to next module"
 msgstr ""
 
-#: jhbuild/frontends/gtkui.py:404 jhbuild/frontends/terminal.py:345
+#: jhbuild/frontends/gtkui.py:404 jhbuild/frontends/terminal.py:352
 msgid "Give up on module"
 msgstr ""
 
-#: jhbuild/frontends/gtkui.py:411 jhbuild/frontends/terminal.py:354
+#: jhbuild/frontends/gtkui.py:411 jhbuild/frontends/terminal.py:361
 #, python-format
 msgid "Go to phase \"%s\""
-msgstr ""
+msgstr "გადასვლა ფაზაზე \"%s\""
 
 #: jhbuild/frontends/gtkui.py:414
 msgid "Open Terminal"
@@ -1017,7 +1018,7 @@ msgstr "მოდული"
 
 #: jhbuild/frontends/gtkui.py:673
 msgid "Start At"
-msgstr ""
+msgstr "გაშვების მისამართი"
 
 #: jhbuild/frontends/gtkui.py:721
 msgid "Preferences"
@@ -1029,11 +1030,11 @@ msgstr "ქსელთან წვდომის გათიშვა"
 
 #: jhbuild/frontends/gtkui.py:734
 msgid "Always run autogen.sh"
-msgstr ""
+msgstr "ყოველთვის გაუშვი autogen.sh"
 
 #: jhbuild/frontends/gtkui.py:735
 msgid "Don't poison modules on failure"
-msgstr ""
+msgstr "ჩავარდნისას მოდულები არ მოიწამლება"
 
 #: jhbuild/frontends/terminal.py:204 jhbuild/frontends/tinderbox.py:212
 #: jhbuild/frontends/tinderbox.py:343 jhbuild/frontends/tinderbox.py:398
@@ -1061,39 +1062,39 @@ msgstr "წარმატება"
 msgid "the following modules were not built"
 msgstr ""
 
-#: jhbuild/frontends/terminal.py:328 jhbuild/frontends/tinderbox.py:374
+#: jhbuild/frontends/terminal.py:335 jhbuild/frontends/tinderbox.py:374
 msgid "automatically retrying configure"
 msgstr ""
 
-#: jhbuild/frontends/terminal.py:332 jhbuild/frontends/tinderbox.py:379
+#: jhbuild/frontends/terminal.py:339 jhbuild/frontends/tinderbox.py:379
 msgid "automatically forcing a fresh checkout"
 msgstr ""
 
-#: jhbuild/frontends/terminal.py:346
+#: jhbuild/frontends/terminal.py:353
 msgid "Start shell"
 msgstr "გარსის გაშვება"
 
-#: jhbuild/frontends/terminal.py:347
+#: jhbuild/frontends/terminal.py:354
 msgid "Reload configuration"
 msgstr "კონფიგურაციის თავიდან ჩატვირთვა"
 
-#: jhbuild/frontends/terminal.py:356
+#: jhbuild/frontends/terminal.py:363
 msgid "choice: "
 msgstr "არჩევანი: "
 
-#: jhbuild/frontends/terminal.py:379
+#: jhbuild/frontends/terminal.py:386
 msgid "exit shell to continue with build"
 msgstr ""
 
-#: jhbuild/frontends/terminal.py:394
+#: jhbuild/frontends/terminal.py:401
 msgid "invalid choice"
 msgstr "არასწორი არჩევანი"
 
-#: jhbuild/frontends/terminal.py:402
+#: jhbuild/frontends/terminal.py:409
 msgid "Type \"yes\" to confirm the action: "
 msgstr ""
 
-#: jhbuild/frontends/terminal.py:407
+#: jhbuild/frontends/terminal.py:414
 msgid "yes"
 msgstr "დიახ"
 
@@ -1133,7 +1134,7 @@ msgstr ""
 
 #: jhbuild/main.py:92
 msgid "modify the condition set"
-msgstr ""
+msgstr "პირობების ნაკრების შეცვლა"
 
 #: jhbuild/main.py:127
 msgid "Interrupted"
@@ -1149,16 +1150,16 @@ msgstr "EOF"
 msgid "Configuring"
 msgstr "მორგება"
 
-#: jhbuild/modtypes/autotools.py:252 jhbuild/modtypes/cmake.py:126
+#: jhbuild/modtypes/autotools.py:252 jhbuild/modtypes/cmake.py:134
 #: jhbuild/modtypes/linux.py:142 jhbuild/modtypes/meson.py:122
 #: jhbuild/modtypes/waf.py:84
 msgid "Cleaning"
 msgstr "გასუფთავება"
 
-#: jhbuild/modtypes/autotools.py:258 jhbuild/modtypes/cmake.py:135
+#: jhbuild/modtypes/autotools.py:258 jhbuild/modtypes/cmake.py:143
 #: jhbuild/modtypes/distutils.py:59 jhbuild/modtypes/linux.py:155
 #: jhbuild/modtypes/meson.py:128 jhbuild/modtypes/perl.py:52
-#: jhbuild/modtypes/pip.py:59 jhbuild/modtypes/waf.py:92
+#: jhbuild/modtypes/pip.py:61 jhbuild/modtypes/waf.py:92
 msgid "Building"
 msgstr "შენობა"
 
@@ -1167,10 +1168,10 @@ msgstr "შენობა"
 msgid "Checking"
 msgstr "შემოწმება"
 
-#: jhbuild/modtypes/autotools.py:299 jhbuild/modtypes/cmake.py:144
+#: jhbuild/modtypes/autotools.py:299 jhbuild/modtypes/cmake.py:152
 #: jhbuild/modtypes/meson.py:141 jhbuild/modtypes/waf.py:122
 msgid "Creating tarball for"
-msgstr ""
+msgstr "იქმენა tarball"
 
 #: jhbuild/modtypes/autotools.py:305
 msgid "Dist checking"
@@ -1180,9 +1181,9 @@ msgstr ""
 msgid "Uninstalling old installed version"
 msgstr "ძველი დაყენებული ვერსიის წაშლა"
 
-#: jhbuild/modtypes/autotools.py:317 jhbuild/modtypes/cmake.py:156
+#: jhbuild/modtypes/autotools.py:317 jhbuild/modtypes/cmake.py:164
 #: jhbuild/modtypes/distutils.py:70 jhbuild/modtypes/meson.py:150
-#: jhbuild/modtypes/perl.py:66 jhbuild/modtypes/pip.py:69
+#: jhbuild/modtypes/perl.py:66 jhbuild/modtypes/pip.py:70
 #: jhbuild/modtypes/waf.py:133
 msgid "Installing"
 msgstr "დაყენება"
@@ -1233,12 +1234,12 @@ msgstr ""
 #: jhbuild/modtypes/__init__.py:227
 #, python-format
 msgid "Deleting .la file: %r"
-msgstr ""
+msgstr "წაიშლება .la ფაილი: %r"
 
 #: jhbuild/modtypes/__init__.py:249
 #, python-format
 msgid "Deleting dir file: %r"
-msgstr ""
+msgstr "წაიშლება dir ფაილი: %r"
 
 #: jhbuild/modtypes/__init__.py:319
 #, python-format
@@ -1307,11 +1308,11 @@ msgstr "ჩამოწერა"
 #: jhbuild/modtypes/__init__.py:620
 #, python-format
 msgid "source directory %s was not created"
-msgstr ""
+msgstr "წყარო საქაღალდე %s არ შექმნილა"
 
 #: jhbuild/modtypes/__init__.py:645
 msgid "wipe directory and start over"
-msgstr ""
+msgstr "საქაღალდის გაწმენდა და თავიდან დაწყება"
 
 #: jhbuild/modtypes/linux.py:46
 #, python-format
@@ -1420,7 +1421,7 @@ msgstr ""
 #: jhbuild/utils/packagedb.py:222
 #, python-format
 msgid "Failed to delete %(file)r: %(msg)s"
-msgstr ""
+msgstr "%(file)r-ის წაშლის შეცდომა: %(msg)s"
 
 #: jhbuild/utils/systeminstall.py:232
 msgid ""
@@ -1492,7 +1493,7 @@ msgstr "pkgfile ვერ ვიპოვე. ავტომატური დ
 
 #: jhbuild/utils/systeminstall.py:386
 msgid "Failed to install pkgfile"
-msgstr ""
+msgstr "pkgfile-ის დაყენების შეცდომა"
 
 #: jhbuild/utils/systeminstall.py:392
 msgid "pkgfile cache is old or doesn't exist, automatically updating"
@@ -1607,100 +1608,100 @@ msgstr ""
 
 #: jhbuild/versioncontrol/darcs.py:82 jhbuild/versioncontrol/darcs.py:88
 #: jhbuild/versioncontrol/fossil.py:80 jhbuild/versioncontrol/fossil.py:93
-#: jhbuild/versioncontrol/git.py:641 jhbuild/versioncontrol/git.py:681
-#: jhbuild/versioncontrol/git.py:757 jhbuild/versioncontrol/hg.py:90
+#: jhbuild/versioncontrol/git.py:635 jhbuild/versioncontrol/git.py:675
+#: jhbuild/versioncontrol/git.py:751 jhbuild/versioncontrol/hg.py:90
 #: jhbuild/versioncontrol/hg.py:96
 msgid "date based checkout not yet supported\n"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:112
+#: jhbuild/versioncontrol/git.py:109
 msgid "ignored bad branch redefinition for module:"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:148
+#: jhbuild/versioncontrol/git.py:142
 #, python-format
 msgid "Need at least git-%s to operate"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:155
+#: jhbuild/versioncontrol/git.py:149
 msgid "Cannot set \"version\" of a git branch without \"tag\""
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:225
+#: jhbuild/versioncontrol/git.py:219
 msgid "Unexpected: Checkoutdir is not a git repository:"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:305
+#: jhbuild/versioncontrol/git.py:299
 #, python-format
 msgid ""
 "The requested branch \"%s\" is not available. Neither locally, nor remotely "
 "in the origin remote."
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:313
+#: jhbuild/versioncontrol/git.py:307
 msgid "Refusing to switch a dirty tree."
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:377
+#: jhbuild/versioncontrol/git.py:371
 #, python-format
 msgid "Command %s returned no output"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:382
+#: jhbuild/versioncontrol/git.py:376
 #, python-format
 msgid "Command %s did not include commit line: %r"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:471
+#: jhbuild/versioncontrol/git.py:465
 msgid ""
 "Failed to update module as it switched to git (you should check for changes "
 "then remove the directory)."
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:472
+#: jhbuild/versioncontrol/git.py:466
 msgid ""
 "Failed to update module (missing .git) (you should check for changes then "
 "remove the directory)."
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:510 jhbuild/versioncontrol/tarball.py:238
+#: jhbuild/versioncontrol/git.py:504 jhbuild/versioncontrol/tarball.py:237
 msgid "Applying patch"
 msgstr "პაჩის გადატარება"
 
-#: jhbuild/versioncontrol/git.py:516
+#: jhbuild/versioncontrol/git.py:510
 #, python-format
 msgid "Skipping patch '%s' (already applied)"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:522
+#: jhbuild/versioncontrol/git.py:516
 #, python-format
 msgid "Could not apply patch '%s'\n"
 msgstr "ვერ გადავატარე პაჩი '%s'\n"
 
-#: jhbuild/versioncontrol/git.py:606
+#: jhbuild/versioncontrol/git.py:600
 msgid "External handling failed\n"
 msgstr ""
 
-#: jhbuild/versioncontrol/git.py:653
+#: jhbuild/versioncontrol/git.py:647
 #, python-format
 msgid "Cannot get last revision from %s. Check the module location."
 msgstr ""
 
-#: jhbuild/versioncontrol/__init__.py:189
+#: jhbuild/versioncontrol/__init__.py:202
 #, python-format
 msgid "could not download patch (error: %s)"
 msgstr "პაჩის გადმოწერის შეცდომა (შეცდომა: %s)"
 
-#: jhbuild/versioncontrol/__init__.py:191
+#: jhbuild/versioncontrol/__init__.py:204
 msgid "could not download patch"
 msgstr "პაჩის გადმოწერის შეცდომა"
 
-#: jhbuild/versioncontrol/__init__.py:223
+#: jhbuild/versioncontrol/__init__.py:236
 #, python-format
 msgid "Failed to find patch: %s"
 msgstr "პაჩი ვერ ვიპოვე: %s"
 
-#: jhbuild/versioncontrol/__init__.py:267
+#: jhbuild/versioncontrol/__init__.py:280
 #, python-format
 msgid "unknown repository type %s"
 msgstr "უცნობი რეპოზიტორიის ტიპი %s"
@@ -1746,66 +1747,68 @@ msgstr ""
 
 #: jhbuild/versioncontrol/svn.py:316
 msgid "Error checking for conflicts"
-msgstr ""
+msgstr "შეცდომა კონფლიქტების შემოწმებისას"
 
-#: jhbuild/versioncontrol/tarball.py:112
+#: jhbuild/versioncontrol/tarball.py:111
 #, python-format
 msgid "URL has no filename component: %s"
-msgstr ""
+msgstr "URL-ს არ გააჩნია ფაილის სახელის კომპონენტი: %s"
 
-#: jhbuild/versioncontrol/tarball.py:154
+#: jhbuild/versioncontrol/tarball.py:153
 msgid "file not downloaded"
 msgstr "ფაილი არ გადმოწერილა"
 
-#: jhbuild/versioncontrol/tarball.py:159
+#: jhbuild/versioncontrol/tarball.py:158
 #, python-format
 msgid "downloaded file size is incorrect (expected %(size1)d, got %(size2)d)"
 msgstr ""
+"გადმოწერილი ფაილის ზომა არასწორია (მოსალოდნელი იყო %(size1)d, მიღებულია "
+"%(size2)d)"
 
-#: jhbuild/versioncontrol/tarball.py:165
+#: jhbuild/versioncontrol/tarball.py:164
 #, python-format
 msgid "invalid hash attribute on module %s"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:178
+#: jhbuild/versioncontrol/tarball.py:177
 #, python-format
 msgid "file hash is incorrect (expected %(sum1)s, got %(sum2)s)"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:181
+#: jhbuild/versioncontrol/tarball.py:180
 #, python-format
 msgid "skipped hash check (missing support for %s)"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:185
+#: jhbuild/versioncontrol/tarball.py:184
 #, python-format
 msgid "tarball dir (%s) must be writable"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:197
+#: jhbuild/versioncontrol/tarball.py:196
 msgid "unable to find wget or curl"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:213
+#: jhbuild/versioncontrol/tarball.py:212
 #, python-format
 msgid "tarball dir (%s) can not be created"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:225
+#: jhbuild/versioncontrol/tarball.py:224
 #, python-format
 msgid "failed to unpack %s"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:228
+#: jhbuild/versioncontrol/tarball.py:227
 #, python-format
 msgid "could not unpack tarball (expected %s dir)"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:246
+#: jhbuild/versioncontrol/tarball.py:245
 msgid "unable to find quilt"
 msgstr ""
 
-#: jhbuild/versioncontrol/tarball.py:257
+#: jhbuild/versioncontrol/tarball.py:256
 msgid "could not checkout quilt patch set"
 msgstr ""
 
