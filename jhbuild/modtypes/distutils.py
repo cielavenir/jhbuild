@@ -19,6 +19,7 @@
 
 __metaclass__ = type
 
+import glob
 import os
 import sys
 
@@ -37,12 +38,14 @@ class DistutilsModule(Package, DownloadableModule):
     PHASE_FORCE_CHECKOUT = DownloadableModule.PHASE_FORCE_CHECKOUT
     PHASE_BUILD = 'build'
     PHASE_INSTALL = 'install'
+    COMMON_PIP_ARGS = ['--disable-pip-version-check', '--no-input', '--no-deps']
 
     def __init__(self, name, branch=None, supports_non_srcdir_builds = True):
         Package.__init__(self, name, branch=branch)
         self.supports_non_srcdir_builds = supports_non_srcdir_builds
         self.supports_install_destdir = True
-        self.python = os.environ.get('PYTHON', 'python2')
+        self.python = os.environ.get('PYTHON', sys.executable)
+        self.pip_exe = [self.python, '-m', 'pip']
 
     def get_srcdir(self, buildscript):
         return self.branch.srcdir
@@ -59,9 +62,9 @@ class DistutilsModule(Package, DownloadableModule):
         buildscript.set_action(_('Building'), self)
         srcdir = self.get_srcdir(buildscript)
         builddir = self.get_builddir(buildscript)
-        cmd = [self.python, 'setup.py', 'build']
-        if srcdir != builddir:
-            cmd.extend(['--build-base', builddir])
+        cmd = self.pip_exe + ['wheel'] + self.COMMON_PIP_ARGS
+        cmd += ['--no-index', '--use-pep517', '--no-build-isolation']
+        cmd += ['--wheel-dir', builddir, srcdir]
         buildscript.execute(cmd, cwd = srcdir, extra_env = self.extra_env)
     do_build.depends = [PHASE_CHECKOUT]
     do_build.error_phase = [PHASE_FORCE_CHECKOUT]
@@ -71,12 +74,14 @@ class DistutilsModule(Package, DownloadableModule):
         srcdir = self.get_srcdir(buildscript)
         builddir = self.get_builddir(buildscript)
         destdir = self.prepare_installroot(buildscript)
-        cmd = [self.python, 'setup.py']
-        if srcdir != builddir:
-            cmd.extend(['build', '--build-base', builddir])
-        cmd.extend(['install', 
+        wheels = glob.glob(os.path.join(builddir, "*.whl"))
+        assert len(wheels) == 1  # only the module wheel should be in the build dir
+        cmd = self.pip_exe + ['install'] + self.COMMON_PIP_ARGS
+        cmd.extend(['--no-index',
+                    '--ignore-installed',
                     '--prefix', buildscript.config.prefix,
-                    '--root', destdir])
+                    '--root', destdir,
+                    wheels[0]])
         buildscript.execute(cmd, cwd = srcdir, extra_env = self.extra_env)
         self.process_install(buildscript, self.get_revision())
     do_install.depends = [PHASE_BUILD]
@@ -114,4 +119,3 @@ def parse_distutils(node, config, uri, repositories, default_repo):
     return instance
 
 register_module_type('distutils', parse_distutils)
-
