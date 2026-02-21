@@ -71,6 +71,10 @@ test-ubuntu2004-basic:
     - '.fdo.distribution-image@ubuntu'
     - '.ubuntu2004-image'
   coverage: /TOTAL\s+\d+\s+\d+\s+(\d+)%/
+  before_script:
+    - sudo apt-get update
+    - sudo apt-get upgrade -y
+    - sudo apt-get install -y python3-pip
   script:
     # verify modulesets
     - xmllint --noout modulesets/*.{xml,xsl,modules}
@@ -105,6 +109,7 @@ test-ubuntu2004-glib:
     # Update for root cert updates
     - sudo apt-get update
     - sudo apt-get upgrade -y
+    - sudo apt-get install -y python3-pip
   script:
     - ./autogen.sh --with-python=python3
     - make
